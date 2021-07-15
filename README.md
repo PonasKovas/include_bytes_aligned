@@ -14,7 +14,7 @@ to the file to include, just as in [`include_bytes!`](https://doc.rust-lang.org/
 
 # Examples
 
-```
+```rust
 use include_bytes_aligned::include_bytes_aligned;
 
 // Aligns the data to 16 bytes
