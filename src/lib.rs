@@ -26,7 +26,7 @@
 
 #[macro_export]
 macro_rules! include_bytes_aligned {
-    ($align_to:literal, $path:literal) => {{
+    ($align_to:expr, $path:expr) => {{
         #[repr(C, align($align_to))]
         struct __Aligned<T: ?Sized>(T);
 
