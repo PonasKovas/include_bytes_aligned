@@ -1,3 +1,4 @@
+#![no_std]
 //! A simple macro that embeds the bytes of an external file into the executable and
 //! guarantees that they are aligned.
 //!
