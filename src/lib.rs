@@ -31,7 +31,7 @@ macro_rules! include_bytes_aligned {
         #[repr(C, align($align_to))]
         struct __Aligned<T: ?Sized>(T);
 
-        static __DATA: &'static __Aligned<[u8]> = &__Aligned(*include_bytes!($path));
+        const __DATA: &'static __Aligned<[u8]> = &__Aligned(*include_bytes!($path));
 
         &__DATA.0
     }};
